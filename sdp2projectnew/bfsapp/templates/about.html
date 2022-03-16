@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homescreen.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+</style>
+    <script src="https://kit.fontawesome.com/d04999eb0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+
+        <div id="homescreenheading">{% load static %} <img src="{% static 'websiteheading.png' %}"/></div>
+
+        <div id="homescreenbuttons">
+            <nav>
+            <ul>
+                <li id="homescreenlogin"><a href="/login">Login</a></li>
+                <li>About</li>
+                <li><a href="/contact">Contact</a></li>
+                <li>News</li>
+                <li><a class='active' href="">Home</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="about">
+            <div class="member1">
+                ATKURI SISIR
+            </div>
+            <div clas="member2">
+                SHANMUKH
+            </div>
+            <div class="member3">
+                CHRIS HARRY
+            </div>
+            <h2>We, The students of KL University are deeply interested in acquiring various skills
+            in web development. </h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends 'commons.html' %}
+ {% load static %}
+    <link rel="stylesheet" href="{% static 'homescreen.css' %}">
+{% block content %}
+   <div class="login">
+        <div id="homescreenheading">{% load static %} <img src="{% static 'websiteheading.png' %}"/></div>
+           <ul>
+               <li class='active' id="homescreenlogin" href="login/" >Login</li>
+               <li><a href="/about">About</a></li>
+               <li><a href="/contact">Contact</a></li>
+               <li>News</li>
+               <li><a href="">Home</a></li>
+           </ul>
+    </div>
+   <center> <h1>{% block title %} Login Page {%endblock%} </h1></center>
+   <center>
+   <div class="loginmatter">
+    <form action="/login" method="post">
+        <table>
+            <tr>
+                <td><input type="text" name="username" placeholder="Enter User Name"></input></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="password" placeholder="Enter Password"></input></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></input></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+
+New User <a href="/newuser"> Register here</a>
+    </div>
+{% endblock %}

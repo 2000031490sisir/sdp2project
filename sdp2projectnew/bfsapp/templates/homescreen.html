@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Screen</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homescreen.css' %}">
+</style>
+    <script src="https://kit.fontawesome.com/d04999eb0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+
+        <div id="homescreenheading">{% load static %} <img src="{% static 'websiteheading.png' %}"/></div>
+
+        <div id="homescreenbuttons">
+            <nav>
+            <ul>
+                <li id="homescreenlogin"><a href="/login">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li>News</li>
+                <li><a class='active' href="">Home</a></li>
+            </ul>
+            </nav>
+<!--            <i class="fa-duotone fa-magnifying-glass"></i>-->
+<!--               <input type="text" placeholder="search">-->
+<!--            <button  id="homescreenlogin">Login</button>-->
+<!--            <button >About</button>-->
+<!--            <button >Contact</button>-->
+<!--            <button >News</button>-->
+<!--            <button ><a href="home/">Home</a></button>-->
+        </div>
+        <div class="bank">
+            <img src="bank.jpg"/>
+            A bank is a financial instituition
+        </div>
+    </div>
+</body>
+</html>

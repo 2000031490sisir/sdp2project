@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homescreen.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</style>
+    <script src="https://kit.fontawesome.com/d04999eb0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+
+        <div id="homescreenheading">{% load static %} <img src="{% static 'websiteheading.png' %}"/></div>
+
+        <div id="homescreenbuttons">
+            <nav>
+            <ul>
+                <li id="homescreenlogin"><a href="/login">Login</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a class='active' href="/contact">Contact</a></li>
+                <li>News</li>
+                <li><a  href="">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="contact">
+            <h2>We are always keen to new developements that are of immense help for your
+                user experience.</h2>
+            <h2>Write to us at </h2>
+            <h2 id="mail" style="text-align:center"><a href="https://www.gmail.com" target='_blank'>bfsteam@gmail.com</a></h2>
+        </div>
+    </div>
+</body>
+</html>

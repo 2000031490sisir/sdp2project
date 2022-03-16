@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width+device-width,initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homescreen.css' %}">
+    <script src="static/validations.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--    <header>-->
+<!--        <h1> BANKING AND FINANCE SYSTEMS </h1>-->
+<!--    </header>-->
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <h3> &copy SDP2 PROJECT</h3>
+    </footer>
+
+</body>
+</html>
